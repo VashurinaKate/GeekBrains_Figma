@@ -1,0 +1,654 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+}
+.main {
+    max-width: 1366px;
+    margin: 0 auto;
+    overflow: hidden;
+    padding: 0 114px;
+}
+
+h1 {
+    font-size: 64px;
+    line-height: 74px;
+    letter-spacing: 0.04em;
+    color: #1F3F68;
+}
+h2 {
+    font-size: 36px;
+    line-height: 46px;
+    text-align: center;
+    letter-spacing: 0.05em;
+    color: #000000;
+}
+h3 {
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: 0.05em;
+    color: #1F3F68;
+}
+a {
+    font-size: 14px;
+    line-height: 30px;
+    letter-spacing: 0.05em;
+    color: #5A98D0;
+}
+p {
+    font-size: 16px;
+    line-height: 26px;
+    letter-spacing: 0.05em;
+    color: #1F3F68;
+    opacity: 0.6;
+}
+
+/* --- HEADER --- */
+header {
+    height: auto;
+    background: linear-gradient(0deg, #EBF3FB 8.84%, rgba(152, 195, 232, 0) 31.12%);
+}
+nav,
+.greeting-wrap,
+.footer-wrap {
+    max-width: 1366px;
+    margin: 0 auto;
+    padding: 0 114px;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 40px;
+}
+header h1 {
+    max-width: 504px;
+}
+header p {
+    max-width: 425px;
+    margin-top: 32px;
+}
+.greeting-img {
+    background-image: url(img/illustration.png);
+    width: 649px;
+    height: 550px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.greeting-wrap {
+    display: flex;
+    margin-top: 115px;
+}
+.greeting button {
+    margin-top: 71px;
+    margin-bottom: 190px;
+}
+
+button {
+    width: 220px;
+    height: 56px;
+    background: #5A98D0;
+    box-shadow: 5px 10px 20px rgba(53, 110, 173, 0.2);
+    border-radius: 10px;
+    border: none;
+    outline: none;
+}
+button a {
+    display: block;
+    font-size: 16px;
+    line-height: 56px;
+    text-align: center;
+    text-decoration: none;
+    letter-spacing: 0.04em;
+    color: #FFFFFF;
+}
+/* --- MAIN --- */
+
+/* - What We Do - */
+.what-we-do {
+    margin-top: 64px;
+}
+.media-wrap {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 64px;
+}
+.media {
+    max-width: 359px;
+    background: #FFFFFF;
+    box-shadow: 5px 20px 50px rgba(16, 112, 177, 0.2);
+    border-radius: 10px;
+    margin: 0 16px;
+}
+.content-media {
+    padding: 44px 32px;
+}
+.img {
+    text-align: center;
+}
+.content-media h3 {
+    margin-top: 50px;
+}
+.content-media p {
+    margin-top: 15px;
+}
+.content-media a {
+    display: inline-block;
+    margin-top: 28px;
+}
+.content-media a::after {
+    content: url(img/arrow.svg);
+    padding-left: 24px;
+}
+
+/* - Finished Project - */
+.finished-project {
+    text-align: center;
+}
+.finished-project h2 {
+    margin-top: 64px;
+    font-size: 36px;
+    line-height: 46px;
+    text-align: center;
+    letter-spacing: 0.05em;
+    color: #000000;
+}
+.finished-project p {
+    margin-top: 32px;
+    color: #222222;
+}
+
+.smart-home-installation h2 {
+    padding-top: 64px;
+    padding-right: 64px;
+    font-size: 32px;
+    line-height: 46px;
+    text-align: right;
+    letter-spacing: 0.05em;
+    color: #FFFFFF;
+}
+
+.smart-home-installation {
+    background-image: url(img/finished.png);
+    margin-top: 64px;
+    height: 480px;
+    max-width: 1140px;
+    margin: 0 auto;
+}
+.app-wrap {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1140px;
+    margin: 32px auto 0px;
+    height: 417px;
+}
+.app-wrap h3 {
+    font-size: 28px;
+    line-height: 46px;
+    letter-spacing: 0.05em;
+    color: #FFFFFF;
+    text-align: left;
+    padding: 32px;
+}
+
+/* - sparklite-app - */
+.sparklite-app {
+    background-image: url(img/sparklite.png);
+    flex-basis: 50%;
+    margin-right: 32px;
+}
+/* - car-rapetition-app - */
+.car-rapetition-app {
+    background-image: url(img/car.png);
+    flex-basis: 50%;
+}
+
+.smart-home-installation,
+.sparklite-app,
+.car-rapetition-app {
+        background-size: contain;
+        background-repeat: no-repeat;
+}
+
+/* --- FOOTER --- */
+footer {
+    margin-top: 112px;
+    background-image: url(img/footer.png);
+    height: 657px;
+}
+footer h2 {
+    max-width: 340px;
+    font-size: 36px;
+    line-height: 46px;
+    letter-spacing: 0.05em;
+    color: #FFFFFF;
+    text-align: left;
+}
+footer p {
+    max-width: 500px;
+    font-size: 16px;
+    line-height: 26px;
+    letter-spacing: 0.05em;
+    color: #FFFFFF;
+    opacity: 0.6;
+    padding-top: 32px;
+}
+hr {
+    border: none;
+    background-color: #FFFFFF;
+    height: 1px;
+    opacity: 0.4;
+    margin-top: 96px;
+}
+footer img {
+    margin-top: 92px;
+}
+.interested {
+    padding-top: 91px;
+}
+.interested button {
+    float: right;
+    margin-top: -170px;
+}
+.contact-wrap {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 64px;
+    margin-bottom: 32px;
+}
+.contact-wrap li {
+    flex-basis: 316px;
+    font-size: 16px;
+    line-height: 26px;
+    letter-spacing: 0.05em;
+    color: #FFFFFF;
+    padding-left: 20px;
+    margin-left: 20px;
+}
+.contact-wrap a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    line-height: 26px;
+    letter-spacing: 0.05em;
+}
+
+
+/* --- CONTACTS --- */
+
+.header-contacts {
+    background-image: none;
+}
+.contact-us {
+    background-image: url(img/contacts/header-bg.png);
+    height: 250px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    margin-top: 50px;
+}
+.contact-us h1 {
+    font-weight: 500;
+    font-size: 44px;
+    line-height: 74px;
+    letter-spacing: 0.04em;
+    color: #FFFFFF;
+    max-width: none;
+    padding-top: 60px;
+}
+.contact-us p {
+    margin: 0 auto;
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: 0.04em;
+    color: rgba(255, 255, 255, 0.6);
+    max-width: 780px;
+}
+
+.info-wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 112px;
+    margin-top: 112px;
+}
+.footer-contacts {
+    margin-top: 0px;
+}
+.contacts-info {
+    max-width: 300px;
+    margin-right: 100px;
+    box-sizing: border-box;
+}
+.contacts-info h3 {
+    text-transform: uppercase;
+    margin-top: 40px;
+    margin-bottom: 8px;
+}
+.contacts-info a {
+    text-decoration: none;
+    color: #1F3F68;
+}
+.contacts-info p {
+    padding-top: 16px;
+}
+.phone a::before {
+    content: url(img/contacts/phone.svg);
+    padding-right: 20px;
+}
+.online-service p:nth-child(2)::before {
+    content: url(img/contacts/web.svg);
+    padding-right: 20px;
+}
+.online-service p:nth-child(3)::before {
+    content: url(img/contacts/mail.svg);
+    padding-right: 20px;
+}
+.send-us-message {
+    width: 540px;
+    padding: 56px;
+    box-shadow: 5px 10px 50px rgba(16, 112, 177, 0.2);
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+.send-us-message h2 {
+    font-size: 20px;
+    line-height: 30px;
+    text-transform: uppercase;
+    color: #1F3F68;
+    margin-bottom: 16px;
+}
+
+.send-us-message span {
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 8px;
+    font-size: 16px;
+    line-height: 30px;
+    letter-spacing: 0.04em;
+    color: #1F3F68;
+    opacity: 0.8;
+}
+input,
+textarea {
+    outline: none;
+    width: 428px;
+    line-height: 30px;
+    opacity: 0.4;
+    border: 1px solid #356EAD;
+    box-sizing: border-box;
+    border-radius: 10px;
+    padding: 21px 43px;
+    font-size: 16px;
+}
+textarea {
+    height: 144px;
+    resize: none;
+}
+.submit {
+    background: #5A98D0;
+    box-shadow: 5px 20px 50px rgba(16, 112, 177, 0.2);
+    opacity: 1;
+    border: none;
+    cursor: pointer;
+    color: white;
+    margin-top: 72px;
+}
+.map {
+    max-width: 940px;
+    margin: 0 auto;
+    margin-bottom: 112px;
+}
+
+/* --- MEDIA --- */
+
+@media screen and (max-width: 768px) {
+    .container {
+        max-width: 768px;
+        overflow: hidden;
+    }
+    header,
+    .main {
+        padding: 0 35px;
+    }
+    nav, 
+    .greeting-wrap, 
+    .footer-wrap {
+        padding: 0 100px;
+    }
+    .header-contacts {
+        padding: 0px;
+        height: auto;
+    }
+    header {
+        height: 868px;
+    }
+    .greeting-img {
+        margin-top: 300px;
+    }
+    .media-wrap {
+        flex-direction: column;
+    }
+    .media {
+        margin: 16px auto;
+    }
+
+    .smart-home-installation {
+        max-width: 704px;
+        height: 297px;
+        margin-top: 32px;
+    }
+    .sparklite-app,
+    .car-rapetition-app {
+        margin-top: 16px;
+        max-width: 336px;
+        height: 253px;
+    }
+    .app-wrap {
+        margin-top: 0px;
+    }
+    footer {
+        margin-top: 100px;
+    }
+    footer p {
+        max-width: 336px;
+    }
+    footer img {
+        margin-top: 64px;
+    }
+    .contact-wrap li {
+        padding-bottom: 24px;
+    }
+    .contact-wrap {
+        margin-bottom: 0px;
+    }
+
+    .media-wrap {
+        margin-top: 32px;
+    }
+    .smart-home-installation h2 {
+        padding-top: 16px;
+        padding-right: 16px;
+    }
+    .finished-project p {
+        max-width: 520px;
+        margin: 32px auto;
+    }
+    .finished-project h2 {
+        margin-top: 127px;
+    }
+    footer {
+        margin-top: 64px;
+    }
+    footer h2 {
+        font-size: 24px;
+        line-height: 28px;
+        text-align: center;
+    }
+    .interested {
+        padding-top: 47px;
+    }
+    
+    .interested button {
+        border-radius: 0px;
+        width: 133.04px;
+        height: 31.48px;
+        margin-top: -100px;
+    }
+    .contact-wrap li {
+        margin-left: 20px;
+    }
+    .info-wrap {
+        flex-direction: column;
+    }
+    .contacts-info {
+        margin-bottom: 64px;
+    }
+    .map {
+        width: 760px;
+    }
+    footer button a {
+        line-height: 31px;
+    }
+}
+@media screen and (max-width: 550px) {
+    .greeting-img {
+        display: none;
+    }
+    .interested button {
+        float: none;
+        margin-top: 32px;
+    }
+    footer hr {
+        margin-top: 32px;
+    }
+}
+@media screen and (max-width: 414px) {
+    nav,
+    .greeting-wrap,
+    .footer-wrap {
+        padding: 0 16px;
+    }
+    nav {
+        padding-top: 24px;
+    }
+    header {
+        height: 455px;
+    }
+    header h1 {
+        text-align: center;
+        font-size: 32px;
+        line-height: 37px;
+        max-width: 343px;
+    }
+    header p {
+        max-width: 343px;
+        margin-top: 12px;
+        font-size: 16px;
+        line-height: 26px;
+        text-align: center;
+    }
+    .greeting-wrap {
+        margin-top: 26px;
+    }
+    .greeting button {
+        margin-top: 22px;
+    }
+    .greeting-img {
+        display: none;
+    }
+    button {
+        width: 108px;
+        height: 27px;
+        margin: 32px auto;
+        display: block;
+    }
+    button a {
+        font-size: 12px;
+        line-height: 26px;
+    }
+    .finished-project {
+        margin-top: 32px;
+    }
+    .finished-project h2,
+    .what-we-do h2 {
+        font-size: 24px;
+        line-height: 28px;
+    }
+    .app-wrap {
+        flex-direction: column;
+        height: 550px;
+    }
+    .sparklite-app,
+    .car-rapetition-app {
+        flex-basis: 100%;
+        background-size: cover;
+    }
+    .sparklite-app {
+        margin-right: 0px;
+    }
+    .finished-project h2 {
+        margin-top: 0px;
+    }
+    .smart-home-installation {
+        height: 145px;
+    }
+    .smart-home-installation h2,
+    .app-wrap h3 {
+        font-size: 16px;
+        line-height: 19px;
+    }
+    .interested p,
+    .rights {
+        text-align: center;
+    }
+    .rights {
+        padding-top: 0px;
+    }
+    .interested button {
+        float: none;
+        margin-top: 40px;
+    }
+    footer {
+        height: 700px;
+    }
+    footer img {
+        margin-top: 0px;
+    }
+
+
+    .contacts-info {
+        margin-right: 0px;
+    }
+    .send-us-message {
+        max-width: 342px;
+        padding: 35px;
+    }
+    input,
+    textarea {
+        width: 271px;
+        padding: 8px 18px;
+    }
+    textarea {
+        height: 92px;
+    }
+    .submit {
+        margin-top: 46px;
+    }
+    .info-wrap {
+        margin-top: 32px;
+        margin-bottom: 32px;
+    }
+    .map {
+        margin-bottom: 32px;
+    }
+    .header-contacts .contact-us p {
+        font-size: 16px;
+        padding: 0 20px;
+    }
+    .header-contacts .contact-us {
+        height: 300px;
+    }
+}
