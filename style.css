@@ -69,22 +69,23 @@ header p {
     max-width: 425px;
     margin-top: 32px;
 }
-.greeting-img {
-    background-image: url(img/illustration.png);
-    width: 649px;
-    height: 550px;
-    background-size: contain;
-    background-repeat: no-repeat;
-}
+
 .greeting-wrap {
     display: flex;
+    justify-content: space-between;
     margin-top: 115px;
 }
 .greeting button {
     margin-top: 71px;
     margin-bottom: 190px;
 }
-
+.greeting-img {
+    align-self: center;
+}
+.greeting-img img {
+    width: 100%;
+    min-width: 393px;
+}
 button {
     width: 220px;
     height: 56px;
@@ -140,9 +141,16 @@ button a {
 .content-media a::after {
     content: url(img/arrow.svg);
     padding-left: 24px;
+    transition: 200ms;
 }
-
+.content-media a:hover {
+    text-decoration: none;
+}
+.content-media a:hover::after {
+    padding-left: 35px;
+}
 /* - Finished Project - */
+
 .finished-project {
     text-align: center;
 }
@@ -159,61 +167,44 @@ button a {
     color: #222222;
 }
 
-.smart-home-installation h2 {
-    padding-top: 64px;
-    padding-right: 64px;
+.smart-home h2 {
     font-size: 32px;
     line-height: 46px;
     text-align: right;
     letter-spacing: 0.05em;
     color: #FFFFFF;
+    position: absolute;
+    right: 64px;
 }
-
-.smart-home-installation {
-    background-image: url(img/finished.png);
+.finished-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 30px;
     margin-top: 64px;
-    height: 480px;
-    max-width: 1140px;
-    margin: 0 auto;
 }
-.app-wrap {
-    display: flex;
-    justify-content: space-between;
-    max-width: 1140px;
-    margin: 32px auto 0px;
-    height: 417px;
+.smart-home {
+    grid-column: 1 / 3;
+    position: relative;
 }
-.app-wrap h3 {
+.project__item {
+    position: relative;
+}
+.project__item h3 {
     font-size: 28px;
     line-height: 46px;
     letter-spacing: 0.05em;
     color: #FFFFFF;
     text-align: left;
     padding: 32px;
+    position: absolute;
 }
-
-/* - sparklite-app - */
-.sparklite-app {
-    background-image: url(img/sparklite.png);
-    flex-basis: 50%;
-    margin-right: 32px;
+.project__img {
+    width: 100%;
 }
-/* - car-rapetition-app - */
-.car-rapetition-app {
-    background-image: url(img/car.png);
-    flex-basis: 50%;
-}
-
-.smart-home-installation,
-.sparklite-app,
-.car-rapetition-app {
-        background-size: contain;
-        background-repeat: no-repeat;
-}
-
 /* --- FOOTER --- */
 footer {
-    margin-top: 112px;
+    margin-top: 60px;
     background-image: url(img/footer.png);
     height: 657px;
 }
@@ -334,6 +325,9 @@ footer img {
 .contacts-info p {
     padding-top: 16px;
 }
+.contacts-info img {
+    width: 100%;
+}
 .phone a::before {
     content: url(img/contacts/phone.svg);
     padding-right: 20px;
@@ -374,7 +368,7 @@ footer img {
 input,
 textarea {
     outline: none;
-    width: 428px;
+    width: 100%;
     line-height: 30px;
     opacity: 0.4;
     border: 1px solid #356EAD;
@@ -403,31 +397,54 @@ textarea {
 }
 
 /* --- MEDIA --- */
+@media screen and (max-width: 870px) {
+    header,
+    .main {
+        padding: 20px 35px;
+    }
+    nav, 
+    .greeting-wrap {
+        padding: 0px;
+    }
+    .greeting-img {
+        align-self: flex-end;
+        position: relative;
+    }
+    .greeting-img img {
+        position: absolute;
+        bottom: 0px;
+        right: 0px;
+    }
+    .header-contacts {
+        padding: 0px;
+    }
+    .header-contacts nav {
+        padding: 20px;
+    }
+}
 
 @media screen and (max-width: 768px) {
     .container {
         max-width: 768px;
         overflow: hidden;
     }
-    header,
-    .main {
-        padding: 0 35px;
-    }
+    
     nav, 
-    .greeting-wrap, 
+    .greeting-wrap {
+        padding: 0px;
+        position: relative;
+    }
+    nav {
+        padding-top: 20px;
+    }
     .footer-wrap {
-        padding: 0 100px;
+        padding: 0 35px;
     }
     .header-contacts {
         padding: 0px;
         height: auto;
     }
-    header {
-        height: 868px;
-    }
-    .greeting-img {
-        margin-top: 300px;
-    }
+    
     .media-wrap {
         flex-direction: column;
     }
@@ -435,22 +452,8 @@ textarea {
         margin: 16px auto;
     }
 
-    .smart-home-installation {
-        max-width: 704px;
-        height: 297px;
-        margin-top: 32px;
-    }
-    .sparklite-app,
-    .car-rapetition-app {
-        margin-top: 16px;
-        max-width: 336px;
-        height: 253px;
-    }
-    .app-wrap {
-        margin-top: 0px;
-    }
     footer {
-        margin-top: 100px;
+        margin-top: 0px;
     }
     footer p {
         max-width: 336px;
@@ -468,7 +471,7 @@ textarea {
     .media-wrap {
         margin-top: 32px;
     }
-    .smart-home-installation h2 {
+    .smart-home h2 {
         padding-top: 16px;
         padding-right: 16px;
     }
@@ -513,10 +516,12 @@ textarea {
         line-height: 31px;
     }
 }
-@media screen and (max-width: 550px) {
+@media screen and (max-width: 700px) {
     .greeting-img {
         display: none;
-    }
+    } 
+}
+@media screen and (max-width: 685px) {
     .interested button {
         float: none;
         margin-top: 32px;
@@ -525,6 +530,7 @@ textarea {
         margin-top: 32px;
     }
 }
+
 @media screen and (max-width: 414px) {
     nav,
     .greeting-wrap,
@@ -535,7 +541,7 @@ textarea {
         padding-top: 24px;
     }
     header {
-        height: 455px;
+        height: auto;
     }
     header h1 {
         text-align: center;
@@ -555,10 +561,9 @@ textarea {
     }
     .greeting button {
         margin-top: 22px;
+        margin-bottom: 30px;
     }
-    .greeting-img {
-        display: none;
-    }
+    
     button {
         width: 108px;
         height: 27px;
@@ -577,28 +582,24 @@ textarea {
         font-size: 24px;
         line-height: 28px;
     }
-    .app-wrap {
-        flex-direction: column;
-        height: 550px;
-    }
-    .sparklite-app,
-    .car-rapetition-app {
-        flex-basis: 100%;
-        background-size: cover;
-    }
-    .sparklite-app {
-        margin-right: 0px;
-    }
+    
     .finished-project h2 {
         margin-top: 0px;
     }
-    .smart-home-installation {
-        height: 145px;
+    .finished-grid {
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.57fr 1fr 1fr;
     }
-    .smart-home-installation h2,
-    .app-wrap h3 {
+    .project__item {
+        grid-column: 1 / 3;
+    }
+    .smart-home h2,
+    .project__item h3 {
         font-size: 16px;
         line-height: 19px;
+    }
+    .smart-home h2 {
+        right: 30px;
     }
     .interested p,
     .rights {
@@ -617,7 +618,6 @@ textarea {
     footer img {
         margin-top: 0px;
     }
-
 
     .contacts-info {
         margin-right: 0px;
